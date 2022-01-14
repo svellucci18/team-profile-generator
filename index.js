@@ -93,8 +93,8 @@ Use 'npm run reset' to reset the dist/ folder`)
         .prompt(managerQuestions)
 
         // THEN create and store an object for the Manager
-
-        employees.push(new Manager( response.name, response.id, response.email ));
+        // Pushing a class which pushes all of the properties that exist for that class
+        employees.push(new Manager( response.name, response.id, response.email, response.officeNumber ));
         console.log(response);
         console.log(employees);
 
@@ -122,7 +122,8 @@ async function whatNext() {
     } else if (response.nextEmployee == 'Intern') { // IF `Add Intern` -> `Ask for intern info`
         askForInternInfo();
     } else {
-        writeToFile("index.html", generateHTML(/* concat responses */)); // IF `All done` -> `build an html page`
+        // By passing employees to generateHTML this pushes the class that was pushed in the init function this is referencing the file not the function
+        writeToFile("index.html", generateHTML(employees)); // IF `All done` -> `build an html page`
     }
 }
 

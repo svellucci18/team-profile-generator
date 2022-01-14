@@ -1,19 +1,44 @@
-const Employee = require('../lib/employee');
+const Employee = require('../lib/Employee');
 
 describe("Employee", () => {
-    // Test for all use cases when initializing a new Employee object
-    it("should create an object with a name id and email properties", () => {
 
-        // Arrange
-        const employee = new Employee("Samantha", 1, "svellucci18@gmail.com");
-    
-        // Act
-        
+    // Methods
+    describe("initialization", () => {
+        it("should build with prop x when give y", () => {
 
-        // Assert
-        expect(employee.name).toEqual("Samantha");
-        expect(employee.id).toEqual(1);
-        expect(employee.email).toEqual("svellucci18@gmail.com");
-    })
+        })
+    });
 
+    describe("getName", () => {
+        it("", () => {
+            // Arrange
+            // Create a new Employee object
+
+            // Act
+            // Call the getName method and store the result
+
+            // Assert
+            // The result is equal to an expected value
+
+        })
+    });
+
+    describe("getId", () => {
+        it("", () => {
+
+        })
+    });
+
+    describe("getEmail", () => {
+        it("", () => {
+
+        })
+    });
+
+    describe("getRole", () => {
+        it("", () => {
+
+        })
+    });
 })
+

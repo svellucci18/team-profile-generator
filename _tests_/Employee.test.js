@@ -5,7 +5,7 @@ describe("Employee", () => {
 
     // Methods
     describe("initialization", () => {
-        it("should build an engineer object", () => {
+        it("should build an employee object", () => {
          const e = new Employee();
          expect(typeof(e)).toBe("object")   
 

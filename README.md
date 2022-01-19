@@ -17,8 +17,7 @@ Built for managers to quickly generate a webpage that display's team info. Easil
 npm i jest inquirer
 
 ## Usage
-Once you've installed the library using npm, you can start building team profiles by typing node index.js into the terminal
-
+Once you've installed the library using npm, you can start building team profiles by typing `node index.js` into the terminal
   
 ## License
 This application is covered under the MIT license.

@@ -86,8 +86,7 @@ const internQuestions = [
 // Ask for manager info
 async function init() { // WOULD THIS BE BETTER AS AN ASYNC AWAIT FUNCTION
     console.log(
-        `Welcome to the team generator!
-Use 'npm run reset' to reset the dist/ folder`)
+        `Welcome to the team generator!`)
     const response = await inquirer
         // Prompt user for the data
         .prompt(managerQuestions)
@@ -95,8 +94,8 @@ Use 'npm run reset' to reset the dist/ folder`)
         // THEN create and store an object for the Manager
         // Pushing a class which pushes all of the properties that exist for that class
         employees.push(new Manager( response.name, response.id, response.email, response.officeNumber ));
-        console.log(response);
-        console.log(employees);
+        // console.log(response);
+        // console.log(employees);
 
         // THEN whatNext()
         whatNext();
@@ -115,7 +114,7 @@ async function whatNext() {
     },])
 
     //  ask the respective questions for engineer or Intern
-    console.log(response);
+    // console.log(response);
   
     if(response.nextEmployee == 'Engineer') { // IF `Add Engineer` -> `Ask for engineer info`
         askForEngineerInfo();
@@ -138,8 +137,8 @@ async function askForEngineerInfo() {
         // THEN create and store an object for the Manager
 
         employees.push(new Engineer( response.name, response.id, response.email, response.github ));
-        console.log(response);
-        console.log(employees);
+        // console.log(response);
+        // console.log(employees);
 
         // THEN whatNext()
         whatNext();
@@ -156,8 +155,8 @@ async function askForInternInfo() {
         // THEN create and store an object for the Manager
 
         employees.push(new Intern( response.name, response.id, response.email, response.school ));
-        console.log(response);
-        console.log(employees);
+        // console.log(response);
+        // console.log(employees);
 
         // THEN whatNext()
         whatNext();

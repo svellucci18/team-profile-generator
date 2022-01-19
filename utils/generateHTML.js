@@ -9,7 +9,7 @@ function generateHTML(data) {
           </div>
         <ul class="list-group list-group-flush">
             <li class="list-group-item">ID: ${manager.id} </li>
-            <li class="list-group-item">Email: ${manager.email}</li>
+            <li class="list-group-item">Email: <a href="mailto:${manager.email}">${manager.email}</a></li>
             <li class="list-group-item">Office Number: ${manager.officeNumber}</li>
         </ul>
     </div>
@@ -25,8 +25,8 @@ function generateHTML(data) {
           </div>
         <ul class="list-group list-group-flush">
             <li class="list-group-item">ID: ${engineer.id} </li>
-            <li class="list-group-item">Email: ${engineer.email}</li>
-            <li class="list-group-item">GitHub: ${engineer.github}</li>
+            <li class="list-group-item">Email: <a href="mailto:${engineer.email}">${engineer.email}</a></li>
+            <li class="list-group-item">GitHub: <a href="https://github.com/${engineer.github}" target="_blank" rel="noopener noreferrer">${engineer.github}</a></li>
         </ul>
     </div>
         `
@@ -41,7 +41,7 @@ function generateHTML(data) {
           </div>
         <ul class="list-group list-group-flush">
             <li class="list-group-item">ID: ${intern.id} </li>
-            <li class="list-group-item">Email: ${intern.email}</li>
+            <li class="list-group-item">Email: <a href="mailto:${intern.email}">${intern.email}</a></li>
             <li class="list-group-item">School: ${intern.school}</li>
         </ul>
     </div>
